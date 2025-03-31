@@ -22,7 +22,9 @@ const links = [
 </script>
 
 <template>
-  <header class="px-10 py-5">
+  <header
+    class="px-10 py-5 fixed z-50 w-full text-neu-white"
+  >
     <nav class="flex justify-between items-center">
       <RouterLink
         to="/"

@@ -1,10 +1,7 @@
-<script setup>
-import TheHeader from '~/components/layouts/TheHeader.vue';
-import TheFooter from '~/components/layouts/TheFooter.vue';
-</script>
+<script setup></script>
 
 <template>
-  <div class="text-neu bg-neu-white min-h-screen">
+  <div class="text-neu bg-neu-white min-h-screen font-body">
     <TheHeader />
 
     <main>

@@ -1,23 +1,18 @@
 <script setup>
-import BaseButton from '../ui/BaseButton.vue';
+defineProps({
+  hero: {
+    type: Object,
+  },
+});
 </script>
 
 <template>
   <section class="p-xl relative">
+    <div class="bg-neu/80 absolute inset-0"></div>
     <div
-      class="flex flex-col items-center justify-center font-heading text-center gap-md"
+      class="flex flex-col items-center justify-center font-heading text-center gap-md relative z-10 text-white"
     >
-      <h1
-        class="text-heading-4xl font-extrabold text-center"
-      >
-        Vi hjälper er med allt inom webb
-      </h1>
-      <h2 class="text-heading-sm font-bold">
-        Eneklt och prisvärd
-      </h2>
-      <BaseButton>
-        <span class="text-white">Kon</span>takta oss
-      </BaseButton>
+      <slot />
     </div>
   </section>
 </template>

@@ -49,14 +49,14 @@ export default {
         'body-sm': '14px',
         'body-xs': '12px',
 
-        'heading-4xl': '74px',
-        'heading-3xl': '68px',
-        'heading-2xl': '62px',
-        'heading-xl': '56px',
-        'heading-lg': '50px',
-        'heading-md': '44px',
-        'heading-sm': '38px',
-        'heading-xs': '32px',
+        'heading-4xl': '66px',
+        'heading-3xl': '60px',
+        'heading-2xl': '54px',
+        'heading-xl': '48px',
+        'heading-lg': '42px',
+        'heading-md': '36px',
+        'heading-sm': '30px',
+        'heading-xs': '24px',
       },
 
       gap: {
@@ -66,7 +66,6 @@ export default {
         md: '20px',
         sm: '10px',
         xs: '5px',
-        xss: '2.5px',
       },
 
       spacing: {
@@ -76,16 +75,24 @@ export default {
         md: '20px',
         sm: '10px',
         xs: '5px',
-        xss: '2.5px',
       },
 
       padding: {
-        xl: '120px',
-        lg: '80px',
-        md: '40px',
-        sm: '20px',
-        xs: '10px',
-        xss: '5px',
+        '2xl': '120px',
+        xl: '80px',
+        lg: '40px',
+        md: '20px',
+        sm: '10px',
+        xs: '5px',
+      },
+
+      margin: {
+        '2xl': '120px',
+        xl: '80px',
+        lg: '40px',
+        md: '20px',
+        sm: '10px',
+        xs: '5px',
       },
     },
   },

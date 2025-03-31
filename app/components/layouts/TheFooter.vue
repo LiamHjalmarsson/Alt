@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink } from 'vue-router';
-import BaseButton from '~/components/ui/BaseButton.vue';
 
 const links = [
   {
