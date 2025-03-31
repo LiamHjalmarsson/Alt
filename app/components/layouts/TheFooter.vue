@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import BaseButton from '~/components/ui/BaseButton.vue';
 
 const links = [
   {
@@ -63,19 +64,7 @@ const links = [
       <h3 class="text-heading-2xl font-semibold">
         Redo att börja
       </h3>
-      <button
-        class="relative h-16 flex items-center justify-center rounded-full px-8"
-      >
-        <span
-          class="absolute left-0 w-16 h-16 bg-cta rounded-full"
-        ></span>
-
-        <span
-          class="relative text-white z-10 font-semibold text-heading-xss tracking-wider"
-        >
-          Kontakta oss
-        </span>
-      </button>
+      <BaseButton to="about"> Kontakta oss </BaseButton>
     </div>
     <nav>
       <ul
