@@ -26,7 +26,7 @@ const links = [
     <nav class="flex justify-between items-center">
       <RouterLink
         to="/"
-        class="font-extrabold text-highlight"
+        class="font-extrabold text-highlight font-heading text-heading-xs"
       >
         ALT media
       </RouterLink>
