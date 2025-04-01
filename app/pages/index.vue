@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <Hero>
+  <BaseHero>
     <h1
       class="text-heading-4xl font-extrabold text-center mt-[40px]"
     >
@@ -12,7 +12,7 @@
       <span class="text-highlight">prisvärd</span>
     </h2>
     <BaseCta> Konkta oss </BaseCta>
-  </Hero>
+  </BaseHero>
 
-  <Services />
+  <ServiceList />
 </template>
