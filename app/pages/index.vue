@@ -11,7 +11,7 @@
       <span class="text-highlight">Enkelt</span> och
       <span class="text-highlight">prisvärd</span>
     </h2>
-    <BaseButton> Konkta oss </BaseButton>
+    <BaseCta> Konkta oss </BaseCta>
   </Hero>
 
   <Services />

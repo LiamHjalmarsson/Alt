@@ -19,11 +19,34 @@ const links = [
     label: 'Om oss',
   },
 ];
+
+const isScrolled = ref(false);
+
+const handleScroll = () => {
+  if (window.scrollY > 50) {
+    isScrolled.value = true;
+  } else {
+    isScrolled.value = false;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onBeforeMount(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 </script>
 
 <template>
   <header
-    class="px-10 py-5 fixed z-50 w-full text-neu-white"
+    :class="[
+      'px-10 py-5 fixed z-50 w-full transition duration-300',
+      isScrolled
+        ? 'bg-neu-white text-neu shadow'
+        : 'bg-transparent text-neu-white',
+    ]"
   >
     <nav class="flex justify-between items-center">
       <RouterLink
