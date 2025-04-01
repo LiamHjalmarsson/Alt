@@ -15,6 +15,6 @@
   </BaseHero>
 
   <ServiceList />
-
   <VisibilitySection />
+  <OfferSection />
 </template>
