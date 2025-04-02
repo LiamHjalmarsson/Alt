@@ -8,11 +8,13 @@ defineProps({
 
 <template>
   <section class="px-lg py-xl">
-    <h2
-      class="mb-lg text-heading-2xl font-heading font-bold"
-    >
-      {{ title }}
-    </h2>
-    <slot />
+    <div class="mx-auto max-w-[1250px]">
+      <h2
+        class="mb-md text-heading-2xl font-heading font-bold"
+      >
+        {{ title }}
+      </h2>
+      <slot />
+    </div>
   </section>
 </template>

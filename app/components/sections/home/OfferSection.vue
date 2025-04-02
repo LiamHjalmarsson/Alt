@@ -10,16 +10,20 @@
           name="uil:github"
           class="text-[96px] text-accent-light"
         />
-        <h3 class="font-semibold text-heading-sm">
-          Ny hemsida
-        </h3>
-        <p>
-          En ny hemsida är den digitala kärnan i ditt
-          företag – vi skapar en skräddarsydd, visuellt
-          tilltalande och högpresterande webbplats som
-          engagerar besökare och stärker din
-          varumärkesidentitet.
-        </p>
+        <div>
+          <h3
+            class="text-heading-sm 2xl:text-heading-md font-semibold mb-sm font-heading"
+          >
+            Ny hemsida
+          </h3>
+          <p>
+            En ny hemsida är den digitala kärnan i ditt
+            företag – vi skapar en skräddarsydd, visuellt
+            tilltalande och högpresterande webbplats som
+            engagerar besökare och stärker din
+            varumärkesidentitet.
+          </p>
+        </div>
         <button class="text-cta font-bold font-heading">
           Vad inngår
         </button>
