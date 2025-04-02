@@ -65,7 +65,7 @@ const links = [
       </h3>
       <BaseCta to="about"> Kontakta oss </BaseCta>
     </div>
-    <nav>
+    <nav aria-label="Footer Navigation">
       <ul
         class="flex w-full gap-10 items-start justify-between"
       >
@@ -76,6 +76,7 @@ const links = [
         >
           <RouterLink
             :to="link.path"
+            :aria-label="`Gå till ${link.label}`"
             class="font-semibold text-heading-xs"
           >
             {{ link.label }}
@@ -89,6 +90,7 @@ const links = [
               <RouterLink
                 class="text-body-lg"
                 :to="child.path"
+                :aria-label="`Gå till ${child.label}`"
               >
                 {{ child.label }}
               </RouterLink>

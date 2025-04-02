@@ -23,14 +23,16 @@
     </div>
 
     <div class="flex justify-end">
-      <button
+      <!-- <button
         class="border-2 border-cta rounded-full p-sm w-12 h-12 text-cta flex justify-center items-center hover:bg-cta-disabled transition duration-150"
       >
         <Icon
           name="heroicons:arrow-right"
           class="text-cta font-semibold text-body-lg"
         />
-      </button>
+      </button> -->
+
+      <button class="text-cta font-bold">Läs mer</button>
     </div>
   </BaseCard>
 </template>

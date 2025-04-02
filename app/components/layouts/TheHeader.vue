@@ -1,22 +1,22 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import { RouterLink } from "vue-router";
 
 const links = [
   {
-    path: '/projects',
-    label: 'Project',
+    path: "/projects",
+    label: "Project",
   },
   {
-    path: '/services',
-    label: 'Service',
+    path: "/services",
+    label: "Service",
   },
   {
-    path: '/articles',
-    label: 'Artiklar',
+    path: "/articles",
+    label: "Artiklar",
   },
   {
-    path: '/about',
-    label: 'Om oss',
+    path: "/about",
+    label: "Om oss",
   },
 ];
 
@@ -31,11 +31,15 @@ const handleScroll = () => {
 };
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener("scroll", handleScroll);
 });
 
 onBeforeMount(() => {
-  window.removeEventListener('scroll', handleScroll);
+  window.removeEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
 });
 </script>
 
@@ -48,24 +52,29 @@ onBeforeMount(() => {
         : 'bg-transparent text-neu-white',
     ]"
   >
-    <nav class="flex justify-between items-center">
+    <nav
+      class="flex justify-between items-center"
+      aria-label="Huvud Navigation"
+    >
       <RouterLink
         to="/"
+        aria-label="Gå till start sida"
         class="font-extrabold text-highlight font-heading text-heading-xs"
       >
         ALT media
       </RouterLink>
       <ul class="flex gap-10 items-center">
-        <li
-          v-for="link in links"
-          :key="link.label"
-        >
-          <RouterLink :to="link.path">
+        <li v-for="link in links" :key="link.label">
+          <RouterLink
+            :to="link.path"
+            :aria-label="`Gå till ${link.label}`"
+          >
             {{ link.label }}
           </RouterLink>
         </li>
 
         <RouterLink
+          aria-label="Boka ett möte"
           to="/contact"
           class="px-8 py-2 bg-cta text-white rounded-full font-semibold transition duration-150 hover:bg-cta-hover"
         >

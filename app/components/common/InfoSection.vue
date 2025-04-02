@@ -29,7 +29,7 @@ defineProps({
       >
         {{ content.title }}
       </h3>
-      <p class="text-neu-white">
+      <p class="text-neu-white text-body-lg">
         {{ content.text }}
       </p>
     </div>

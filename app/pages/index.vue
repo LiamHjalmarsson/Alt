@@ -27,4 +27,11 @@
   />
 
   <ProjectSection />
+
+  <InfoSection
+    :content="{
+      title: 'Vi på alt media',
+      text: 'Vi är en webbyrå som specialiserar oss på webbdesign och utveckling för företag som vill växa och nå nya höjder online. Med användarfokus och moderna lösningar bygger vi webbplatser som inte bara ser bra ut – de driver trafik, engagerar besökare och ökar konverteringar.',
+    }"
+  />
 </template>
