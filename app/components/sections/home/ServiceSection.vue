@@ -1,9 +1,17 @@
-<script setup></script>
+<script setup>
+import { useIndexStore } from '~/store';
+
+const useStore = useIndexStore();
+</script>
 
 <template>
-  <BaseSection title="Så kan vi hjälpa er">
+  <BaseSection :title="useStore.service.title">
     <ul class="grid grid-cols-2 lg:grid-cols-3 gap-lg">
-      <ServiceCard v-for="i in 6" :key="i" />
+      <ServiceCard
+        v-for="service in useStore.service.services"
+        :key="service.id"
+        :service="service"
+      />
     </ul>
   </BaseSection>
 </template>
