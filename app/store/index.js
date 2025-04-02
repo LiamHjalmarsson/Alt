@@ -86,9 +86,30 @@ export const useIndexStore = defineStore('data', () => {
     ],
   });
 
+  const offer = ref({
+    title: 'Rätt lösning för digg företag',
+    list: [
+      {
+        id: 1,
+        title: 'Ny hemsida',
+        description: `En ny hemsida är den digitala kärnan i ditt företag – vi skapar en skräddarsydd, visuellt tilltalande och högpresterande webbplats som engagerar besökare och stärker din varumärkesidentitet.`,
+        icon: 'uil:github',
+        details: [],
+      },
+      {
+        id: 2,
+        title: 'Befintlig hemsida',
+        description: `Har du redan en hemsida men vill förbättra den? Vi hjälper dig att uppdatera design, hastighet, säkerhet och SEO så att din webbplats presterar bättre.`,
+        icon: 'uil:accessible-icon-alt',
+        details: [],
+      },
+    ],
+  });
+
   return {
     hero,
     service,
     visability,
+    offer,
   };
 });

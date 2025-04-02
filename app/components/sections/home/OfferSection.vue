@@ -1,27 +1,29 @@
+<script setup>
+import { useIndexStore } from '~/store';
+
+const useStore = useIndexStore();
+</script>
+
 <template>
-  <BaseSection title="Rätt lösning för ditt företag">
+  <BaseSection :title="useStore.offer.title">
     <div class="grid grid-cols-2 gap-xl">
       <BaseCard
-        v-for="i in 2"
-        :key="i"
-        class="flex justify-center items-center flex-col gap-lg text-center"
+        v-for="item in useStore.offer.list"
+        :key="item.id"
+        class="flex justify-between items-center flex-col gap-lg text-center"
       >
         <Icon
-          name="uil:github"
+          :name="item.icon"
           class="text-[96px] text-accent-light"
         />
-        <div>
+        <div class="flex-1">
           <h3
             class="text-heading-sm 2xl:text-heading-md font-semibold mb-md font-heading"
           >
-            Ny hemsida
+            {{ item.title }}
           </h3>
           <p>
-            En ny hemsida är den digitala kärnan i ditt
-            företag – vi skapar en skräddarsydd, visuellt
-            tilltalande och högpresterande webbplats som
-            engagerar besökare och stärker din
-            varumärkesidentitet.
+            {{ item.description }}
           </p>
         </div>
         <button class="text-cta font-bold font-heading">
