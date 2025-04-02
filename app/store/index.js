@@ -6,6 +6,7 @@ export const useIndexStore = defineStore('data', () => {
     title: 'Vi hjälper er med allt inom webb',
     subtitle: 'Enkelt och billigt',
     cta: 'Kontakt oss',
+    image: '',
   });
 
   const service = ref({
@@ -106,10 +107,41 @@ export const useIndexStore = defineStore('data', () => {
     ],
   });
 
+  const project = ref({
+    title: 'Några av våra uppdrag',
+    list: [
+      {
+        id: 1,
+        title: 'Ny hemsida',
+        image:
+          'https://images.unsplash.com/photo-1519222970733-f546218fa6d7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      },
+      {
+        id: 2,
+        title: 'Befintlig hemsida',
+        image:
+          'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      },
+      {
+        id: 3,
+        title: 'Befintlig hemsida',
+        image:
+          'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      },
+      {
+        id: 4,
+        title: 'Befintlig hemsida',
+        image:
+          'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      },
+    ],
+  });
+
   return {
     hero,
     service,
     visability,
     offer,
+    project,
   };
 });

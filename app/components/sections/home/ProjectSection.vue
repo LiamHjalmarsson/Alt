@@ -1,12 +1,25 @@
+<script setup>
+import { useIndexStore } from '~/store';
+
+const useStore = useIndexStore();
+</script>
+
 <template>
   <BaseSection title="Några av våra uppdrag">
     <div class="flex gap-md mb-lg">
       <div
-        class="flex-1 flex justify-center items-center h-96 bg-neu-gray"
-        v-for="i in 4"
-        :key="i"
+        class="flex justify-center items-center h-96 bg-neu-gray relative group overflow-hidden transition-all duration-500 flex-[0.5] hover:flex-[2]"
+        v-for="item in useStore.project.list"
+        :key="item.id"
       >
-        <span class="font-semibold text-heading-md">
+        <NuxtImg
+          :src="item.image"
+          fit="cover"
+          class="w-full h-full object-cover absolute inset-0 group-hover:brightness-75 transition duration-300"
+        />
+        <span
+          class="font-bold text-heading-lg relative z-10 text-transparent group-hover:text-neu-white duration-300 transition"
+        >
           Project
         </span>
       </div>

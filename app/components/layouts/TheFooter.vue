@@ -1,56 +1,56 @@
 <script setup>
-import { RouterLink } from "vue-router";
+import { RouterLink } from 'vue-router';
 
 const links = [
   {
-    path: "/projects",
-    label: "Project",
+    path: '/projects',
+    label: 'Project',
     children: [
       {
-        label: "Web",
-        path: "/projects",
+        label: 'Web',
+        path: '/projects',
       },
       {
-        label: "App",
-        path: "/projects",
+        label: 'App',
+        path: '/projects',
       },
     ],
   },
   {
-    path: "/services",
-    label: "Service",
+    path: '/services',
+    label: 'Service',
     children: [
       {
-        label: "Utevckling",
-        path: "/projects",
+        label: 'Utevckling',
+        path: '/projects',
       },
       {
-        label: "Seo",
-        path: "/projects",
+        label: 'Seo',
+        path: '/projects',
       },
     ],
   },
   {
-    path: "/about",
-    label: "Om oss",
+    path: '/about',
+    label: 'Om oss',
     children: [
       {
-        label: "Kontakta",
-        path: "/projects",
+        label: 'Kontakta',
+        path: '/projects',
       },
       {
-        label: "Artiklar",
-        path: "/projects",
+        label: 'Artiklar',
+        path: '/projects',
       },
     ],
   },
   {
-    path: "/terms",
-    label: "Terms",
+    path: '/terms',
+    label: 'Terms',
     children: [
       {
-        label: "Terms and condition",
-        path: "/projects",
+        label: 'Terms and condition',
+        path: '/projects',
       },
     ],
   },
@@ -63,7 +63,9 @@ const links = [
       <h3 class="text-heading-2xl font-semibold">
         Redo att börja
       </h3>
-      <BaseCta to="about"> Kontakta oss </BaseCta>
+      <div class="w-fit">
+        <BaseCta to="about"> Kontakta oss </BaseCta>
+      </div>
     </div>
     <nav aria-label="Footer Navigation">
       <ul
