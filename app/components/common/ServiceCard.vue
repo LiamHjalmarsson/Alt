@@ -9,14 +9,12 @@ defineProps({
 <template>
   <BaseCard>
     <div class="flex flex-col justify-between h-full">
-      <div class="mb-md">
-        <Icon
-          :name="service.icon"
-          class="text-[96px] text-accent-light"
-        />
-      </div>
+      <Icon
+        :name="service.icon"
+        class="text-[96px] text-accent-light"
+      />
 
-      <div class="mb-md">
+      <div class="my-md">
         <h3
           class="text-heading-sm 2xl:text-heading-md font-semibold mb-sm font-heading"
         >

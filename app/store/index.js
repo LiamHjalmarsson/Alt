@@ -50,8 +50,45 @@ export const useIndexStore = defineStore('data', () => {
     ],
   });
 
+  const visability = ref({
+    title: 'Varför synas på webben',
+    list: [
+      {
+        id: 1,
+        title: 'Bättre synlighet',
+        description: `Vårt mål är att förstå varje kunds verksamhet och den marknad de verkar på. Vi strävar efter att helt sätta oss in i målgruppen och deras behov – för att skapa digitala lösningar som engagerar och levererar verkligt värde.`,
+      },
+      {
+        id: 2,
+        title: 'Ökat förtroende',
+        description: `Vår planeringsprocess förvandlar insikter till en tydlig handlingsplan som hjälper dig att nå dina affärsmål. Genom att förstå dina behov skapar vi en strategi som ökar trafiken, engagerar besökare och omvandlar dem till kunder.`,
+      },
+      {
+        id: 3,
+        title: 'Finns för alla',
+        description: `Vi kombinerar estetik och funktion för att skapa digitala upplevelser som fångar användarnas uppmärksamhet. Vår designprocess fokuserar på användarvänlighet och varumärkesidentitet – allt för att öka engagemang och driva konverteringar.`,
+      },
+      {
+        id: 4,
+        title: 'Stick ut',
+        description: `Vi bygger snabba, skalbara och säkra digitala lösningar anpassade efter dina affärsbehov. Med modern teknik och smart kod tar vi din webbplats eller applikation från idé till verklighet – alltid med fokus på prestanda, användarupplevelse och långsiktig hållbarhet.`,
+      },
+      {
+        id: 5,
+        title: 'Ökad försäljning',
+        description: `Vi kombinerar estetik och funktion för att skapa digitala upplevelser som fångar användarnas uppmärksamhet. Vår designprocess fokuserar på användarvänlighet och varumärkesidentitet – allt för att öka engagemang och driva konverteringar.`,
+      },
+      {
+        id: 6,
+        title: 'Mät och förbättra',
+        description: `Vi bygger snabba, skalbara och säkra digitala lösningar anpassade efter dina affärsbehov. Med modern teknik och smart kod tar vi din webbplats eller applikation från idé till verklighet – alltid med fokus på prestanda, användarupplevelse och långsiktig hållbarhet.`,
+      },
+    ],
+  });
+
   return {
     hero,
     service,
+    visability,
   };
 });

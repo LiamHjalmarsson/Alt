@@ -1,8 +1,7 @@
 <script setup>
 defineProps({
-  detail: {
+  item: {
     type: Object,
-    // required: true,
   },
   index: {
     type: Number,
@@ -11,22 +10,17 @@ defineProps({
 </script>
 
 <template>
-  <div class="space-y-sm">
+  <div class="space-y-xs">
     <div class="flex items-center gap-md text-heading-md">
       <span
-        v-if="index"
         class="text-highlight font-bold text-heading-4xl"
       >
-        {{ index }}
+        {{ item.id }}
       </span>
-      <h3 class="font-semibold">Bättre synlighet</h3>
+      <h3 class="font-semibold">{{ item.title }}</h3>
     </div>
     <p class="text-neu-white">
-      Vårt mål är att förstå varje kunds verksamhet och den
-      marknad de verkar på. Vi strävar efter att helt sätta
-      oss in i målgruppen och deras behov – för att skapa
-      digitala lösningar som engagerar och levererar
-      verkligt värde.
+      {{ item.description }}
     </p>
   </div>
 </template>
