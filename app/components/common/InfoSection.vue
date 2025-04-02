@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+defineProps({
+  content: {
+    type: Object,
+  },
+});
+</script>
 
 <template>
   <section
@@ -8,15 +14,10 @@
       <h3
         class="text-heading-3xl font-heading text-highlight font-bold"
       >
-        Varför oss
+        {{ content.title }}
       </h3>
       <p class="text-neu-white">
-        Vi är en webbyrå som specialiserar oss på webbdesign
-        och utveckling för företag som vill växa och nå nya
-        höjder online. Med användarfokus och moderna
-        lösningar bygger vi webbplatser som inte bara ser
-        bra ut – de driver trafik, engagerar besökare och
-        ökar konverteringar.
+        {{ content.text }}
       </p>
     </div>
     <div class="absolute inset-0 bg-accent"></div>

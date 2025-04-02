@@ -1,16 +1,12 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import { RouterLink } from "vue-router";
 
-defineProps({
-  to: {
-    type: String,
-  },
-});
+defineProps({});
 </script>
 
 <template>
   <RouterLink
-    :to="to"
+    to="/"
     class="relative w-fit h-16 flex items-center justify-center rounded-full px-6"
   >
     <span

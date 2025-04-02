@@ -7,10 +7,10 @@ defineProps({
 </script>
 
 <template>
-  <section class="px-lg py-xl">
+  <section class="px-lg py-2xl">
     <div class="mx-auto max-w-[1250px]">
       <h2
-        class="mb-md text-heading-2xl font-heading font-bold"
+        class="mb-lg text-heading-2xl font-heading font-bold"
       >
         {{ title }}
       </h2>

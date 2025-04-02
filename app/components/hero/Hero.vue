@@ -8,7 +8,7 @@ defineProps({
 
 <template>
   <section
-    class="p-md lg:p-xl min-h-fit h-[70vh] flex justify-center items-center relative"
+    class="p-md lg:p-xl min-h-fit h-[80vh] flex justify-center items-center relative"
   >
     <div class="bg-neu/80 absolute inset-0"></div>
     <div

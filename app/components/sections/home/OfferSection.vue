@@ -1,10 +1,10 @@
 <template>
   <BaseSection title="Rätt lösning för ditt företag">
-    <div class="grid grid-cols-2 gap-lg">
+    <div class="grid grid-cols-2 gap-xl">
       <BaseCard
         v-for="i in 2"
         :key="i"
-        class="flex justify-center items-center flex-col gap-md text-center"
+        class="flex justify-center items-center flex-col gap-lg text-center"
       >
         <Icon
           name="uil:github"
@@ -12,7 +12,7 @@
         />
         <div>
           <h3
-            class="text-heading-sm 2xl:text-heading-md font-semibold mb-sm font-heading"
+            class="text-heading-sm 2xl:text-heading-md font-semibold mb-md font-heading"
           >
             Ny hemsida
           </h3>
