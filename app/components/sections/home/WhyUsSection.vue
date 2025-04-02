@@ -1,0 +1,3 @@
+<template>
+  <InfoSection />
+</template>

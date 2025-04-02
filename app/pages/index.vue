@@ -19,4 +19,5 @@
   <ServiceSection />
   <VisibilitySection />
   <OfferSection />
+  <WhyUsSection />
 </template>
