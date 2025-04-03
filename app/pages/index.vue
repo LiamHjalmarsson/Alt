@@ -29,7 +29,7 @@ const useStore = useIndexStore();
     }"
   />
 
-  <ProjectSection />
+  <FeaturedSection />
 
   <InfoSection
     :content="{

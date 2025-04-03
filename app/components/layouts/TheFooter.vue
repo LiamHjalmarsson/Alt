@@ -58,16 +58,19 @@ const links = [
 </script>
 
 <template>
-  <footer class="bg-neu text-neu-white p-xl space-y-md">
-    <div>
+  <footer class="bg-neu text-neu-white p-xl space-y-lg">
+    <div class="mx-auto max-w-[1250px]">
       <h3 class="text-heading-2xl font-semibold">
         Redo att börja
       </h3>
-      <div class="w-fit">
+      <div class="w-fit mt-md">
         <BaseCta to="about"> Kontakta oss </BaseCta>
       </div>
     </div>
-    <nav aria-label="Footer Navigation">
+    <nav
+      aria-label="Footer Navigation"
+      class="mx-auto max-w-[1250px]"
+    >
       <ul
         class="flex w-full gap-10 items-start justify-between"
       >

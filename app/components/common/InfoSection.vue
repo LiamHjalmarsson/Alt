@@ -23,7 +23,9 @@ defineProps({
 
     <div class="absolute inset-0 bg-accent/80 z-10"></div>
 
-    <div class="max-w-[1000px] text-center relative z-20">
+    <div
+      class="max-w-[1000px] text-center relative z-20 p-xl"
+    >
       <h3
         class="text-heading-3xl font-heading text-highlight font-bold mb-md"
       >
@@ -32,6 +34,13 @@ defineProps({
       <p class="text-neu-white text-body-lg">
         {{ content.text }}
       </p>
+    </div>
+
+    <div
+      class="absolute bottom-0 p-xl right-0 text-neu-white z-30"
+      v-if="content.cta"
+    >
+      <BaseCta> Om oss </BaseCta>
     </div>
   </section>
 </template>
