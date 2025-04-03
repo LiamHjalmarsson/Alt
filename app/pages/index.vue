@@ -39,4 +39,6 @@ const useStore = useIndexStore();
   />
 
   <FaqSection />
+
+  <ArticleSection />
 </template>
