@@ -13,7 +13,7 @@ const useStore = useIndexStore();
       <div
         v-for="(item, index) in useStore.faq.questions"
         :key="item.id"
-        class="flex gap-lg items-center border-b-2 border-highlight"
+        class="flex gap-lg items-center"
       >
         <span
           class="text-highlight font-bold text-heading-3xl"
