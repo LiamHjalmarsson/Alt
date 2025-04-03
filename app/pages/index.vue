@@ -1,5 +1,5 @@
 <script setup>
-import { useIndexStore } from '~/store';
+import { useIndexStore } from "~/store";
 
 const useStore = useIndexStore();
 </script>
@@ -37,4 +37,6 @@ const useStore = useIndexStore();
       text: 'Vi är en webbyrå som specialiserar oss på webbdesign och utveckling för företag som vill växa och nå nya höjder online. Med användarfokus och moderna lösningar bygger vi webbplatser som inte bara ser bra ut – de driver trafik, engagerar besökare och ökar konverteringar.',
     }"
   />
+
+  <FaqSection />
 </template>

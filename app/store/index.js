@@ -1,50 +1,50 @@
-import { defineStore } from 'pinia';
-import { ref } from 'vue';
+import { defineStore } from "pinia";
+import { ref } from "vue";
 
-export const useIndexStore = defineStore('data', () => {
+export const useIndexStore = defineStore("data", () => {
   const hero = ref({
-    title: 'Vi hjälper er med allt inom webb',
-    subtitle: 'Enkelt och billigt',
-    cta: 'Kontakt oss',
-    image: '',
+    title: "Vi hjälper er med allt inom webb",
+    subtitle: "Enkelt och billigt",
+    cta: "Kontakt oss",
+    image: "",
   });
 
   const service = ref({
-    title: 'Så kan vi hjälpa er',
+    title: "Så kan vi hjälpa er",
     services: [
       {
         id: 1,
-        title: 'Cms',
+        title: "Cms",
         content: `Vi bygger moderna, snabba och användarvänliga webbplatser som engagerar.`,
         icon: `fluent:content-view-24-regular`,
       },
       {
         id: 2,
-        title: 'Ui & Ux',
+        title: "Ui & Ux",
         content: `Vi optimerar din webbplats för sökmotorer (SEO) så att du syns bättre och når rätt målgrupp.`,
         icon: `material-symbols:design-services-outline-rounded`,
       },
       {
         id: 3,
-        title: 'Utvckling',
+        title: "Utvckling",
         content: `Vi utvecklar skräddarsydda lösningar med fokus på funktionalitet, prestanda och långsiktig hållbarhet.`,
         icon: `ic:outline-code-off`,
       },
       {
         id: 4,
-        title: 'Hosting',
+        title: "Hosting",
         content: `Vi erbjuder säker och snabb hosting som garanterar stabil drift och optimal prestanda för din webbplats.`,
         icon: `ant-design:cloud-server-outlined`,
       },
       {
         id: 3,
-        title: 'Seo',
+        title: "Seo",
         content: `Vi optimerar din webbplats för sökmotorer (SEO) så att du syns bättre och når rätt målgrupp.`,
         icon: `lineicons:seo`,
       },
       {
         id: 3,
-        title: 'Accessibility',
+        title: "Accessibility",
         content: `Vi skapar tillgängliga webbplatser som är användarvänliga för alla, oavsett enhet eller behov.`,
         icon: `oui:accessibility`,
       },
@@ -52,87 +52,110 @@ export const useIndexStore = defineStore('data', () => {
   });
 
   const visability = ref({
-    title: 'Varför synas på webben',
+    title: "Varför synas på webben",
     list: [
       {
         id: 1,
-        title: 'Bättre synlighet',
+        title: "Bättre synlighet",
         description: `Vårt mål är att förstå varje kunds verksamhet och den marknad de verkar på. Vi strävar efter att helt sätta oss in i målgruppen och deras behov – för att skapa digitala lösningar som engagerar och levererar verkligt värde.`,
       },
       {
         id: 2,
-        title: 'Ökat förtroende',
+        title: "Ökat förtroende",
         description: `Vår planeringsprocess förvandlar insikter till en tydlig handlingsplan som hjälper dig att nå dina affärsmål. Genom att förstå dina behov skapar vi en strategi som ökar trafiken, engagerar besökare och omvandlar dem till kunder.`,
       },
       {
         id: 3,
-        title: 'Finns för alla',
+        title: "Finns för alla",
         description: `Vi kombinerar estetik och funktion för att skapa digitala upplevelser som fångar användarnas uppmärksamhet. Vår designprocess fokuserar på användarvänlighet och varumärkesidentitet – allt för att öka engagemang och driva konverteringar.`,
       },
       {
         id: 4,
-        title: 'Stick ut',
+        title: "Stick ut",
         description: `Vi bygger snabba, skalbara och säkra digitala lösningar anpassade efter dina affärsbehov. Med modern teknik och smart kod tar vi din webbplats eller applikation från idé till verklighet – alltid med fokus på prestanda, användarupplevelse och långsiktig hållbarhet.`,
       },
       {
         id: 5,
-        title: 'Ökad försäljning',
+        title: "Ökad försäljning",
         description: `Vi kombinerar estetik och funktion för att skapa digitala upplevelser som fångar användarnas uppmärksamhet. Vår designprocess fokuserar på användarvänlighet och varumärkesidentitet – allt för att öka engagemang och driva konverteringar.`,
       },
       {
         id: 6,
-        title: 'Mät och förbättra',
+        title: "Mät och förbättra",
         description: `Vi bygger snabba, skalbara och säkra digitala lösningar anpassade efter dina affärsbehov. Med modern teknik och smart kod tar vi din webbplats eller applikation från idé till verklighet – alltid med fokus på prestanda, användarupplevelse och långsiktig hållbarhet.`,
       },
     ],
   });
 
   const offer = ref({
-    title: 'Rätt lösning för digg företag',
+    title: "Rätt lösning för digg företag",
     list: [
       {
         id: 1,
-        title: 'Ny hemsida',
+        title: "Ny hemsida",
         description: `En ny hemsida är den digitala kärnan i ditt företag – vi skapar en skräddarsydd, visuellt tilltalande och högpresterande webbplats som engagerar besökare och stärker din varumärkesidentitet.`,
-        icon: 'uil:github',
+        icon: "uil:github",
         details: [],
       },
       {
         id: 2,
-        title: 'Befintlig hemsida',
+        title: "Befintlig hemsida",
         description: `Har du redan en hemsida men vill förbättra den? Vi hjälper dig att uppdatera design, hastighet, säkerhet och SEO så att din webbplats presterar bättre.`,
-        icon: 'uil:accessible-icon-alt',
+        icon: "uil:accessible-icon-alt",
         details: [],
       },
     ],
   });
 
   const project = ref({
-    title: 'Några av våra uppdrag',
+    title: "Några av våra uppdrag",
     list: [
       {
         id: 1,
-        title: 'Ny hemsida',
+        title: "Ny hemsida",
         image:
-          'https://images.unsplash.com/photo-1519222970733-f546218fa6d7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          "https://images.unsplash.com/photo-1519222970733-f546218fa6d7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
         id: 2,
-        title: 'Befintlig hemsida',
+        title: "Befintlig hemsida",
         image:
-          'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
         id: 3,
-        title: 'Befintlig hemsida',
+        title: "Befintlig hemsida",
         image:
-          'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
         id: 4,
-        title: 'Befintlig hemsida',
+        title: "Befintlig hemsida",
         image:
-          'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+    ],
+  });
+
+  const faq = ref({
+    title: "Vanliga frågor",
+    questions: [
+      {
+        id: 1,
+        title:
+          "Varför behöver min verksamhet anlita en webbyrå?",
+        answer: "",
+      },
+      {
+        id: 2,
+        title:
+          "Hur lång tid tar det för er att skapa en hemsida?",
+        answer: "",
+      },
+      {
+        id: 3,
+        title: "Vilka tjänster erbjuder ni?",
+        answer: "",
       },
     ],
   });
@@ -143,5 +166,6 @@ export const useIndexStore = defineStore('data', () => {
     visability,
     offer,
     project,
+    faq,
   };
 });
