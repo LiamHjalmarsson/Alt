@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/image",
     "@pinia/nuxt",
+    "@nuxtjs/strapi",
   ],
 
   components: [
@@ -23,5 +24,13 @@ export default defineNuxtConfig({
     format: ["webp"],
 
     dir: "assets/images",
+
+    strapi: {
+      baseURL: 'http://localhost:1337'
+    }
   },
+
+  strapi: {
+    url: 'http://localhost:1337',
+  }
 });

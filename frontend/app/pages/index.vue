@@ -1,7 +1,13 @@
 <script setup>
+import { onBeforeMount } from "vue";
 import { useIndexStore } from "~/store";
 
 const useStore = useIndexStore();
+
+onBeforeMount(() => {
+  useStore.getProjects();
+});
+
 </script>
 
 <template>
@@ -29,7 +35,7 @@ const useStore = useIndexStore();
     }"
   />
 
-  <FeaturedSection />
+  <ProjectSection />
 
   <InfoSection
     :content="{
