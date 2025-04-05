@@ -3,6 +3,7 @@ import { ref } from "vue";
 
 export const useIndexStore = defineStore("data", () => {
   const { find, findOne } = useStrapi();
+  const graphql = useStrapiGraphQL()
 
   const hero = ref({
     title: "Vi hjälper er med allt inom webb",
@@ -134,16 +135,37 @@ export const useIndexStore = defineStore("data", () => {
     ],
   });
 
+  const articles = ref([]);
+
   const getProjects = async () => {
+    // let projects = await find("projects", {
+    //   populate: "*",
+    // });
 
-    let projects = await find("projects", {
-      populate: "*",
-    });
-
-    console.log(projects.data);
-    project.value = projects.data 
+    // console.log(projects.data);
+    // project.value = projects.data 
   }
 
+  const getArticles = async () => {
+
+
+    const { data } = await find("articles", {
+      populate: "*"
+      // populate:{
+      //   blocks: {
+      //     on: {
+      //       "blocks.hero": {
+      //         populate: "*",
+      //       },
+      //     }
+      //   }
+      // }
+    });
+  
+    articles.value = data;
+  
+    console.log(articles.value);
+  };
 
   return {
     hero,
@@ -152,6 +174,7 @@ export const useIndexStore = defineStore("data", () => {
     offer,
     project,
     faq,
-    getProjects
+    articles,
+    getArticles
   };
 });
