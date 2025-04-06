@@ -3,7 +3,6 @@ import { ref } from "vue";
 
 export const useIndexStore = defineStore("data", () => {
   const { find, findOne } = useStrapi();
-  const graphql = useStrapiGraphQL()
 
   const hero = ref({
     title: "Vi hjälper er med allt inom webb",
@@ -147,8 +146,6 @@ export const useIndexStore = defineStore("data", () => {
   }
 
   const getArticles = async () => {
-
-
     const { data } = await find("articles", {
       populate: "*"
       // populate:{
