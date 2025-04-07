@@ -33,7 +33,7 @@
         "files"
       ]
     },
-    "featured": {
+    "is_featured": {
       "type": "boolean",
       "default": false
     },
