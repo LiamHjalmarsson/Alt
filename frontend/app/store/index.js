@@ -137,12 +137,12 @@ export const useIndexStore = defineStore("data", () => {
   const articles = ref([]);
 
   const getProjects = async () => {
-    // let projects = await find("projects", {
-    //   populate: "*",
-    // });
+    let projects = await find("projects", {
+      populate: "*",
+    });
 
-    // console.log(projects.data);
-    // project.value = projects.data 
+    console.log(projects.data);
+    project.value = projects.data 
   }
 
   const getArticles = async () => {

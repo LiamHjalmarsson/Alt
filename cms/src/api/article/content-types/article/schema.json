@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Article"
+    "displayName": "Article",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,26 +25,17 @@
       "targetField": "title"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "featured": {
       "type": "boolean",
       "default": false
-    },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": [
-        "blocks.paragraph",
-        "blocks.paragraph-with-image",
-        "blocks.hero",
-        "blocks.full-image"
-      ]
     }
   }
 }
