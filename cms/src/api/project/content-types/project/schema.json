@@ -20,10 +20,15 @@
       "type": "uid",
       "targetField": "title"
     },
-    "hero": {
-      "type": "component",
-      "repeatable": false,
-      "component": "blocks.hero"
+    "featured_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     }
   }
 }

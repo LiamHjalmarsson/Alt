@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_services",
+  "info": {
+    "displayName": "service",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    }
+  }
+}

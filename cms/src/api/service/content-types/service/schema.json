@@ -4,7 +4,8 @@
   "info": {
     "singularName": "service",
     "pluralName": "services",
-    "displayName": "Service"
+    "displayName": "Service",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,16 +16,6 @@
       "required": true,
       "unique": true
     },
-    "articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article"
-    },
-    "projects": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::project.project"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title",
@@ -32,6 +23,9 @@
     },
     "description": {
       "type": "text"
+    },
+    "icon": {
+      "type": "string"
     }
   }
 }

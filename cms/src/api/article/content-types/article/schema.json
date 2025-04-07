@@ -36,6 +36,9 @@
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "date": {
+      "type": "date"
     }
   }
 }

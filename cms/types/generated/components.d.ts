@@ -16,6 +16,19 @@ export interface BlocksHero extends Struct.ComponentSchema {
   };
 }
 
+export interface BlocksService extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_services';
+  info: {
+    displayName: 'service';
+    icon: 'layout';
+  };
+  attributes: {
+    tags: Schema.Attribute.Relation<'oneToMany', 'api::tag.tag'>;
+    text: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ElementsLink extends Struct.ComponentSchema {
   collectionName: 'components_elements_links';
   info: {
@@ -44,6 +57,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'blocks.hero': BlocksHero;
+      'blocks.service': BlocksService;
       'elements.link': ElementsLink;
       'seo.seo': SeoSeo;
     }
