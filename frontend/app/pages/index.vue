@@ -1,7 +1,12 @@
 <script setup>
+import { onMounted } from "vue";
 import { useIndexStore } from "~/store";
 
 const useStore = useIndexStore();
+
+onMounted(() => {
+  useStore.getArticles();
+});
 </script>
 
 <template>

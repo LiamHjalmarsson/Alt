@@ -146,22 +146,13 @@ export const useIndexStore = defineStore("data", () => {
   }
 
   const getArticles = async () => {
-    const { data } = await find("articles", {
-      populate: "*"
-      // populate:{
-      //   blocks: {
-      //     on: {
-      //       "blocks.hero": {
-      //         populate: "*",
-      //       },
-      //     }
-      //   }
-      // }
-    });
-  
-    articles.value = data;
-  
-    console.log(articles.value);
+    if (articles.value.length === 0) {
+      const { data } = await find("articles", {
+        populate: "*"
+      });
+
+      articles.value = data;
+    }
   };
 
   return {
