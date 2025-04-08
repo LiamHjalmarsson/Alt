@@ -38,6 +38,11 @@
     "is_featured": {
       "type": "boolean",
       "default": false
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
     }
   }
 }

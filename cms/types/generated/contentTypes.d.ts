@@ -396,6 +396,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'seo.seo', false>;
     slug: Schema.Attribute.UID<'title'>;
     subservices: Schema.Attribute.Relation<
       'oneToMany',
@@ -460,6 +461,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'seo.seo', false>;
     slug: Schema.Attribute.UID<'title'>;
     subservices: Schema.Attribute.Relation<
       'oneToMany',
@@ -498,6 +500,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'seo.seo', false>;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
