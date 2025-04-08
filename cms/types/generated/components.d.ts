@@ -29,6 +29,19 @@ export interface BlocksService extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsImage extends Struct.ComponentSchema {
+  collectionName: 'components_elements_images';
+  info: {
+    displayName: 'Image';
+    icon: 'expand';
+  };
+  attributes: {
+    alt: Schema.Attribute.String & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images' | 'videos'> &
+      Schema.Attribute.Required;
+  };
+}
+
 export interface ElementsLink extends Struct.ComponentSchema {
   collectionName: 'components_elements_links';
   info: {
@@ -45,11 +58,18 @@ export interface ElementsLink extends Struct.ComponentSchema {
 export interface SeoSeo extends Struct.ComponentSchema {
   collectionName: 'components_seo_seos';
   info: {
+    description: '';
     displayName: 'Seo';
     icon: 'bulletList';
   };
   attributes: {
-    title: Schema.Attribute.String;
+    metaCanonicalURL: Schema.Attribute.String;
+    metaDescription: Schema.Attribute.Text & Schema.Attribute.Required;
+    metaImage: Schema.Attribute.Component<'elements.image', false>;
+    metaKeywords: Schema.Attribute.Text;
+    metaTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    preventIndexing: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
   };
 }
 
@@ -58,6 +78,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'blocks.hero': BlocksHero;
       'blocks.service': BlocksService;
+      'elements.image': ElementsImage;
       'elements.link': ElementsLink;
       'seo.seo': SeoSeo;
     }

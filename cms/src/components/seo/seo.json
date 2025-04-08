@@ -2,11 +2,33 @@
   "collectionName": "components_seo_seos",
   "info": {
     "displayName": "Seo",
-    "icon": "bulletList"
+    "icon": "bulletList",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
+    "metaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    },
+    "metaImage": {
+      "displayName": "Image",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.image"
+    },
+    "metaKeywords": {
+      "type": "text"
+    },
+    "preventIndexing": {
+      "type": "boolean",
+      "default": false
+    },
+    "metaCanonicalURL": {
       "type": "string"
     }
   }
